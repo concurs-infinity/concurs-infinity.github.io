@@ -205,7 +205,7 @@ button:hover{
 
 .tooltip-text{
     visibility: hidden;
-    width: 10vw;
+    width: clamp(128px, 10vw, 256px);
     background-color: black;
     color: #ffffff;
     text-align: center;
@@ -215,6 +215,7 @@ button:hover{
     top: 110%;
     left: 50%;
     transform: translate(-50%, 0%);
+    z-index: 10;
 }
 
 .tooltip:hover .tooltip-text {
